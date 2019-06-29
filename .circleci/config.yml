@@ -14,5 +14,4 @@ jobs:
       - checkout
       - run: git submodule sync && git submodule update --init
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
-      - run: chmod +x ./deploy.sh && ./deploy.sh
       - run: rsync -avz $HUGO_BUILD_DIR/ root@leite.dev:/var/www/blog
