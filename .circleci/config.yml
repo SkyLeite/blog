@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build_and_deploy:
+    branches:
+      - master
+    docker:
+      - image: cibuilds/hugo:latest
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/public
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "e6:3e:36:f5:bd:ee:fb:e7:5c:31:cd:4d:c8:b4:b9:24"
+      - run: apk update && apk add git && apk add rsync
+      - checkout
+      - run: git submodule sync && git submodule update --init
+      - run: HUGO_ENV production -v -d $HUGO_BUILD_DIR
+      - run: chmod +x ./deploy.sh && ./deploy.sh
+      - run: rsync -avz $HUGO_BUILD_DIR/ root@leite.dev:/var/www/blog
