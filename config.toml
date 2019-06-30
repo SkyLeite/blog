@@ -10,7 +10,7 @@ disqusShortname = "rodrigoleite"
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "blue"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 10
   # set theme to full screen width
   fullWidthTheme = false
   # center theme with default width
@@ -20,24 +20,24 @@ disqusShortname = "rodrigoleite"
 
 [languages]
   [languages.en]
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    keywords = ""
+    title = "Rodrigo Leite"
+    subtitle = ""
+    keywords = "tech"
     copyright = ""
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "Rodrigo Leite"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+        identifier = "contact"
+        name = "Contact Me"
+        url = "mailto:rodrigo@leite.dev"
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "github"
+        name = "Github"
+        url = "https://github.com/RodrigoLeiteF"
