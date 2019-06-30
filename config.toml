@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
+disqusShortname = "rodrigoleite"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
