@@ -2,7 +2,7 @@
 title = "Understanding Asynchronous Javascript"
 author = ["Rodrigo Leite"]
 date = 2019-06-30T03:09:00-03:00
-lastmod = 2019-06-30T03:10:06-03:00
+lastmod = 2019-06-30T04:12:04-03:00
 tags = ["programming", "javascript"]
 categories = ["topic"]
 draft = false
@@ -93,12 +93,12 @@ const done = (error, fileData) => {
     console.log(`You have ${notes.length} notes`);
 }
 
-// Start our spinner
-spinner.start();
-
 // Read the file, and pass a reference to our function
 // to be run once the file is done reading
 fs.readFile(fileLocation, done);
+
+// Start our spinner
+spinner.start();
 ```
 
 Note how we don't manipulate the data instantly. The `fs.readFile` function
@@ -177,7 +177,6 @@ const Spinner = require("cli-spinner").Spinner;
 
 const fileLocation = "notes.txt";
 const spinner = new Spinner("Processing...");
-spinner.start();
 
 // Read the file
 fs.readFile(fileLocation)
@@ -202,6 +201,8 @@ fs.readFile(fileLocation)
     .catch((error) => {
         console.error(`ERROR: ${error}`);
     });
+
+spinner.start();
 ```
 
 Even if you don't yet understand how that works, you can see how it looks a lot
