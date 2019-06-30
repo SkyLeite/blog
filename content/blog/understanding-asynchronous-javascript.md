@@ -1,35 +1,12 @@
-#+STARTUP: content
-#+AUTHOR: Rodrigo Leite
-#+HUGO_BASE_DIR: ./
-#+HUGO_SECTION: ./
-#+HUGO_AUTO_SET_LASTMOD: t
-
-* Pages
-:PROPERTIES:
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :noauthor true :nocomment true :nodate true :nopaging true :noread true
-:EXPORT_HUGO_MENU: :menu main
-:EXPORT_HUGO_SECTION: pages
-:EXPORT_HUGO_WEIGHT: auto
-:END:
-
-** Test Page
-:PROPERTIES:
-:EXPORT_FILE_NAME: test-page
-:END:
-
-Hello! Lorem ipsum!
-
-
-* Posts
-:PROPERTIES:
-:EXPORT_HUGO_SECTION: blog
-:END:
-** Topic :@topic:
-*** DONE Understanding Asynchronous Javascript :programming:javascript:
-CLOSED: [2019-06-30 Sun 03:09]
-:PROPERTIES:
-:EXPORT_FILE_NAME: understanding-asynchronous-javascript
-:END:
++++
+title = "Understanding Asynchronous Javascript"
+author = ["Rodrigo Leite"]
+date = 2019-06-30T03:09:00-03:00
+lastmod = 2019-06-30T03:10:06-03:00
+tags = ["programming", "javascript"]
+categories = ["topic"]
+draft = false
++++
 
 The most common issue I've seen beginners face when learning Javascript is it's
 asynchronous nature. Understandably of course, as it's considerably different
@@ -39,32 +16,32 @@ for newcomers to Javascript or asynchronous programming in general.
 
 Take the following sample:
 
-#+BEGIN_SRC js
+```js
 const add = (a, b) => {
     return a + b;
 };
 
 const result = add(20, 10);
 return result;
-#+END_SRC
+```
 
 In it, the interpreter does the following:
 
-1. Define a constant named `add` that holds an arrow function
-2. Define a constant named `result` that holds the return value of `add(20,
-   10)`
-3. Return the value of the constant `result`
+1.  Define a constant named \`add\` that holds an arrow function
+2.  Define a constant named \`result\` that holds the return value of \`add(20,
+    10)\`
+3.  Return the value of the constant \`result\`
 
 As you already know, that means the code runs in the order it's read, from top
 to bottom and left to right. This is very useful for simple programs because it
 keeps the code clean, concise and easy to follow, but it poses problems for more
 complex projects.
 
-For example, say you have a file called =notes.txt= and you want to read it and
+For example, say you have a file called `notes.txt` and you want to read it and
 count how many notes it has. Assuming the file has one note per line, we can
 achieve this goal like so:
 
-#+BEGIN_SRC js
+```js
 const fs = require("fs"); // Load the `fs` module.
                           // It is responsible for interacting with the filesystem
 
@@ -73,7 +50,7 @@ const fileData = fs.readFileSync(fileLocation); // Read our file into memory
 const notes = fileData.split("\n"); // Split our file by the newline character
 
 console.log(`You have ${notes.length} notes`); // Finally, log the result
-#+END_SRC
+```
 
 Great! This example works perfectly, but it's not very elegant. If we're
 processing a large file, this operation could take a relatively long time and
@@ -81,14 +58,15 @@ confuse the end user, since the process will completely freeze until it has the
 data it needs. A common way of adressing this issue is with loading spinners,
 but due to Javascript's single-threaded nature that's not possible... right?
 
-**** What is asynchronous?
+
+## What is asynchronous? {#what-is-asynchronous}
 
 Asynchronous code is simply some piece of code that doesn't necessarily run at the same time
 as another. This is useful in our example because it means we can run the code
 for our loading spinner while the file is being processed. Crazy, right? Here's
-how I would do it, using the [[https://github.com/helloIAmPau/node-spinner][cli-spinner]] library for simplicity:
+how I would do it, using the [cli-spinner](https://github.com/helloIAmPau/node-spinner) library for simplicity:
 
-#+BEGIN_SRC js
+```js
 // Load the `fs` module.
 // It is responsible for interacting with the filesystem
 const fs = require("fs");
@@ -121,25 +99,26 @@ spinner.start();
 // Read the file, and pass a reference to our function
 // to be run once the file is done reading
 fs.readFile(fileLocation, done);
-#+END_SRC
+```
 
-Note how we don't manipulate the data instantly. The =fs.readFile= function
+Note how we don't manipulate the data instantly. The `fs.readFile` function
 expects a reference to a function as the second parameter. When it is done
 reading and encoding the file, it will call that function with the data and
 we're free to manipulate it. In the meantime, however, the node process is free
 to do whatever else it wants (in this case, show our little spinner). This is
-called a /callback/, and for the longest time it was the /de facto/ way of doing
+called a _callback_, and for the longest time it was the _de facto_ way of doing
 asynchronous programming in Javascript. But...
 
-**** The problem with callbacks
+
+## The problem with callbacks {#the-problem-with-callbacks}
 
 Expanding our example, say that in addition to displaying how many notes the
 user has, we also want to display how big the file is. To do so, we use the
-=fs.stat= function, and like with =fs.readFile=, we also need to use callbacks.
-Since we want to display that information /after/ we read the file, we must
-register our new callback in the =done= function, like so:
+`fs.stat` function, and like with `fs.readFile`, we also need to use callbacks.
+Since we want to display that information _after_ we read the file, we must
+register our new callback in the `done` function, like so:
 
-#+BEGIN_SRC js
+```js
 // Define the function we want to be
 // run when the file is done being read
 const done = (error, fileData) => {
@@ -166,21 +145,22 @@ const done = (error, fileData) => {
         console.log(`Your file has ${fileInformation.size} bytes of information`);
     });
 }
-#+END_SRC
+```
 
 Instead of defining a second function for this, we use an inline arrow function
 for convenience. As you can see, that introduces a couple problems, all of
 which get progressively worse the more callbacks we need to chain together:
 
-1. One more level of nesting, making our code hard to read
-2. We need to come up with new names for our callback parameters, as the previous variables
-   are still in scope.
+1.  One more level of nesting, making our code hard to read
+2.  We need to come up with new names for our callback parameters, as the previous variables
+    are still in scope.
 
 We can work around these problems by making each callback it's own top-level
 function, but that is cumbersome for simple operations like this. With these
 issues in mind, the community came up with...
 
-**** Promises (!!!)
+
+## Promises (!!!) {#promises}
 
 Promises not only offer a cleaner way of chaining asynchronous operations, but
 by nature also allow you to do all sorts of cool things like running multiple
@@ -189,7 +169,7 @@ the first to complete is used.
 
 Here's how our example looks when using promises instead of callbacks:
 
-#+BEGIN_SRC js
+```js
 // Load the `fs` module.
 // It is responsible for interacting with the filesystem
 const fs = require("fs").promises;
@@ -222,48 +202,49 @@ fs.readFile(fileLocation)
     .catch((error) => {
         console.error(`ERROR: ${error}`);
     });
-#+END_SRC
+```
 
 Even if you don't yet understand how that works, you can see how it looks a lot
 cleaner right? To start using promises, you need to understand a couple of
 things.
 
 A promise is an object like any other. While it can vary by implementation, you
-can assume /every/ promise has at least these two methods:
+can assume _every_ promise has at least these two methods:
 
-1. =.then()= :: Takes a function as the first argument to be run when the promise /resolves/
-   (completes). Basically your way of saying "do this, /then/ that"
+1.  `.then()` :: Takes a function as the first argument to be run when the promise _resolves_
+    (completes). Basically your way of saying "do this, _then_ that"
 
-2. =.catch()= :: Like =.then()=, takes a function as the first argument to be run when the
-   promise /rejects/ (errors). It is important to *always* /catch/ (handle) promise
-   /rejections/, even if you just log them somewhere. If you don't, you'll get a
-   warning in the console and in the future a crash in your application.
+2.  `.catch()` :: Like `.then()`, takes a function as the first argument to be run when the
+    promise _rejects_ (errors). It is important to **always** _catch_ (handle) promise
+    _rejections_, even if you just log them somewhere. If you don't, you'll get a
+    warning in the console and in the future a crash in your application.
 
 With that in mind, the usual workflow when working with promises is:
 
-1. Call a function that returns a promise (in this case, =fs.readFile=)
-2. Call =.then()= on the returned promise with a callback for what we want to do
-   with the data
-3. If chaining, call another function that returns a promise and return it. This
-   can be done indefinitely, of course.
-4. Call =.catch()= to handle whatever errors our promise chain can potentially throw.
+1.  Call a function that returns a promise (in this case, `fs.readFile`)
+2.  Call `.then()` on the returned promise with a callback for what we want to do
+    with the data
+3.  If chaining, call another function that returns a promise and return it. This
+    can be done indefinitely, of course.
+4.  Call `.catch()` to handle whatever errors our promise chain can potentially throw.
 
 This is the most basic overview of how asynchronous operations work in
-Javascript. There's a lot more to cover, like =async/await= and =Promise.all()=,
+Javascript. There's a lot more to cover, like `async/await` and `Promise.all()`,
 but this should be enough to get you started. If you have any questions, refer
 to the FAQ and feel free to post a comment if that doesn't help or if you
 believe this article can be improved.
 
-**** FAQ
 
-1. Q: Can I get data out of a callback / promise?
-  
-   A: No. Since callbacks / promises run at some indeterminate time in the
-   future, trying to do so will lead you to all sorts of weird bugs that are
-   hard to trace back. Usually you should treat data that's inside a callback /
-   function as 100% limited to that scope, that way you can avoid these problems altogether.
+## FAQ {#faq}
 
-2. Q: Can I wait for a promise to complete before doing something else?
+1.  Q: Can I get data out of a callback / promise?
 
-   A: No. If you want to run an operation after a promise resolves, you must do
-   it inside the callback of =.then()=.
+    A: No. Since callbacks / promises run at some indeterminate time in the
+    future, trying to do so will lead you to all sorts of weird bugs that are
+    hard to trace back. Usually you should treat data that's inside a callback /
+    function as 100% limited to that scope, that way you can avoid these problems altogether.
+
+2.  Q: Can I wait for a promise to complete before doing something else?
+
+    A: No. If you want to run an operation after a promise resolves, you must do
+    it inside the callback of `.then()`.

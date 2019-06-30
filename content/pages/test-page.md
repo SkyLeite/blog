@@ -1,7 +1,7 @@
 +++
 title = "Test Page"
 author = ["Rodrigo Leite"]
-lastmod = 2019-06-29T18:16:22-03:00
+lastmod = 2019-06-30T01:10:29-03:00
 draft = false
 weight = 2001
 noauthor = true
