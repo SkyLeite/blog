@@ -12,13 +12,23 @@
 :EXPORT_HUGO_WEIGHT: auto
 :END:
 
-** Test Page
+** About
 :PROPERTIES:
 :EXPORT_FILE_NAME: test-page
 :END:
 
-Hello! Lorem ipsum!
+Hello! I'm Rodrigo Leite, a 21 years old Software Engineer from Brazil.
+Fascinated by programming from a very young age, my first "real" project was a
+Discord bot used to alert users of random events in the japanese game Phantasy
+Star Online 2. It was a moderate hit, and the fact that it impacted the lives of
+so many people (including myself) was a huge influence on my career.
 
+My goal with this blog is to share some of the knowledge I've gained over the
+years, and also improve my writing. There's also a therapeutical aspect to it I
+haven't figured out yet :P
+
+If you wish to contact me, feel free to shoot me an email at [[mailto:rodrigo@leite.dev][rodrigo@leite.dev]]
+or a toot at [[https://pleroma.leite.dev/rodrigo][@rodrigo@pleroma.leite.dev]].
 
 * Posts
 :PROPERTIES:
