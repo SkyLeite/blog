@@ -2,7 +2,7 @@
 title = "Understanding Asynchronous Javascript"
 author = ["Rodrigo Leite"]
 date = 2019-06-30T03:09:00-03:00
-lastmod = 2019-06-30T04:12:04-03:00
+lastmod = 2019-07-02T01:52:50-03:00
 tags = ["programming", "javascript"]
 categories = ["topic"]
 draft = false
@@ -34,10 +34,10 @@ In it, the interpreter does the following:
 
 As you already know, that means the code runs in the order it's read, from top
 to bottom and left to right. This is very useful for simple programs because it
-keeps the code clean, concise and easy to follow, but it poses problems for more
-complex projects.
+keeps the code clean, concise and easy to follow, but such approach poses
+problems for more complex projects.
 
-For example, say you have a file called `notes.txt` and you want to read it and
+For example, say you have a file called `notes.txt` and you want to read and
 count how many notes it has. Assuming the file has one note per line, we can
 achieve this goal like so:
 
@@ -54,9 +54,10 @@ console.log(`You have ${notes.length} notes`); // Finally, log the result
 
 Great! This example works perfectly, but it's not very elegant. If we're
 processing a large file, this operation could take a relatively long time and
-confuse the end user, since the process will completely freeze until it has the
-data it needs. A common way of adressing this issue is with loading spinners,
-but due to Javascript's single-threaded nature that's not possible... right?
+confuse the end user, since the process will completely freeze until the file is
+read. A common way of adressing this issue is with loading spinners,
+but due to Javascript's single-threaded nature that's not possible, as it would
+require running code simultaneously... right?
 
 
 ## What is asynchronous? {#what-is-asynchronous}
@@ -102,12 +103,11 @@ spinner.start();
 ```
 
 Note how we don't manipulate the data instantly. The `fs.readFile` function
-expects a reference to a function as the second parameter. When it is done
-reading and encoding the file, it will call that function with the data and
-we're free to manipulate it. In the meantime, however, the node process is free
+expects a reference to a function as the second parameter, which is then called
+when the data we need is ready. In the meantime, however, the node process is free
 to do whatever else it wants (in this case, show our little spinner). This is
 called a _callback_, and for the longest time it was the _de facto_ way of doing
-asynchronous programming in Javascript. But...
+asynchronous programming in Javascript. But such approach is not perfect.
 
 
 ## The problem with callbacks {#the-problem-with-callbacks}
@@ -148,19 +148,20 @@ const done = (error, fileData) => {
 ```
 
 Instead of defining a second function for this, we use an inline arrow function
-for convenience. As you can see, that introduces a couple problems, all of
+for convenience. As you can see, this introduces a couple problems, both of
 which get progressively worse the more callbacks we need to chain together:
 
 1.  One more level of nesting, making our code hard to read
 2.  We need to come up with new names for our callback parameters, as the previous variables
     are still in scope.
 
-We can work around these problems by making each callback it's own top-level
+We can work around these issues by making each callback it's own top-level
 function, but that is cumbersome for simple operations like this. With these
-issues in mind, the community came up with...
+issues in mind, the community came up with Promises, which aim to provide more
+flexibility and reduce nesting when working with asynchronous Javascript.
 
 
-## Promises (!!!) {#promises}
+## Promises {#promises}
 
 Promises not only offer a cleaner way of chaining asynchronous operations, but
 by nature also allow you to do all sorts of cool things like running multiple
@@ -205,8 +206,8 @@ fs.readFile(fileLocation)
 spinner.start();
 ```
 
-Even if you don't yet understand how that works, you can see how it looks a lot
-cleaner right? To start using promises, you need to understand a couple of
+Even if you don't yet understand how that works, you can see how the code looks a lot
+cleaner. To start using promises, you need to understand a couple of
 things.
 
 A promise is an object like any other. While it can vary by implementation, you
