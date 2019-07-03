@@ -41,7 +41,7 @@ CLOSED: [2019-06-30 Sun 03:09]
 :EXPORT_FILE_NAME: understanding-asynchronous-javascript
 :END:
 
-The most common issue I've seen beginners face when learning Javascript is it's
+The most common issue I've seen beginners face when learning Javascript is its
 asynchronous nature. Understandably of course, as it's considerably different
 from writing fully synchronous code, which is what is usually taught first. My
 goal with this article is to provide a comprehensible and easily approachable explanation

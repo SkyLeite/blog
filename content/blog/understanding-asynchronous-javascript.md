@@ -2,13 +2,13 @@
 title = "Understanding Asynchronous Javascript"
 author = ["Rodrigo Leite"]
 date = 2019-06-30T03:09:00-03:00
-lastmod = 2019-07-02T01:52:50-03:00
+lastmod = 2019-07-03T12:54:19-03:00
 tags = ["programming", "javascript"]
 categories = ["topic"]
 draft = false
 +++
 
-The most common issue I've seen beginners face when learning Javascript is it's
+The most common issue I've seen beginners face when learning Javascript is its
 asynchronous nature. Understandably of course, as it's considerably different
 from writing fully synchronous code, which is what is usually taught first. My
 goal with this article is to provide a comprehensible and easily approachable explanation
