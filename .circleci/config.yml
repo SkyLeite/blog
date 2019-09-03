@@ -15,4 +15,4 @@ jobs:
       - run: git submodule sync && git submodule update --init
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
       - run: ssh-keyscan leite.dev >> ~/.ssh/known_hosts
-      - run: rsync -avz $HUGO_BUILD_DIR/ root@leite.dev:/var/www/blog
+      - run: rsync -avz $HUGO_BUILD_DIR/ circleci@leite.dev:/var/www/blog
