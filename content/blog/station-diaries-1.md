@@ -2,13 +2,13 @@
 title = "Station Diaries \\#1 - Start of Something New"
 author = ["Rodrigo Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2019-09-02T23:42:15-03:00
+lastmod = 2019-09-30T10:12:05-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false
 +++
 
-With how accessible internet connections are these days, the expolosion of
+With how accessible internet connections are these days, the explosion of
 streaming almost feels like a natural progression of the way we consume media.
 In the case of music, we've never experience so much convenience since all you
 have to do to listen to your favorite album is to launch Spotify, type its name
