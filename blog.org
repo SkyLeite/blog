@@ -30,6 +30,16 @@ haven't figured out yet :P
 If you wish to contact me, feel free to shoot me an email at [[mailto:rodrigo@leite.dev][rodrigo@leite.dev]]
 or a toot at [[https://pleroma.leite.dev/rodrigo][@rodrigo@pleroma.leite.dev]].
 
+** Library
+:PROPERTIES:
+:EXPORT_FILE_NAME: library
+:END:
+
+This page lists helpful articles I came across online. Maybe they'll help you
+too :)
+
+- [[http://lpan.io/one-liner-dropbox-client/][My one-liner Linux Dropbox Client]] (by \@l_pan_) - No HTTPS
+
 * Posts
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog
