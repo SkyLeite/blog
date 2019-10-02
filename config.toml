@@ -1,4 +1,4 @@
-baseurl = "/posts"
+baseurl = "/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
@@ -6,7 +6,7 @@ disqusShortname = "rodrigoleite"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+  contentTypeName = "content/posts"
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "blue"
   # if you set this to 0, only submenu trigger will be visible
