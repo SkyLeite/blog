@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
+      - image: cibuilds/hugo:0.57.2
     working_directory: ~/hugo
     environment:
       HUGO_BUILD_DIR: ~/hugo/public
