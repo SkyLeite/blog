@@ -42,7 +42,7 @@ too :)
 
 * Posts
 :PROPERTIES:
-:EXPORT_HUGO_SECTION: blog
+:EXPORT_HUGO_SECTION: posts
 :END:
 ** Topic :@topic:
 *** DONE Understanding Asynchronous Javascript :programming:javascript:

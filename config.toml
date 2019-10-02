@@ -6,7 +6,7 @@ disqusShortname = "rodrigoleite"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "blog"
+  contentTypeName = "posts"
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "blue"
   # if you set this to 0, only submenu trigger will be visible

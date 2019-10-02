@@ -2,7 +2,7 @@
 title = "Station Diaries \\#1 - Start of Something New"
 author = ["Rodrigo Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2019-09-30T10:12:05-03:00
+lastmod = 2019-10-01T23:23:22-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false

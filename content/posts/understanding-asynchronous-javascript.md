@@ -2,7 +2,7 @@
 title = "Understanding Asynchronous Javascript"
 author = ["Rodrigo Leite"]
 date = 2019-06-30T03:09:00-03:00
-lastmod = 2019-07-03T12:54:19-03:00
+lastmod = 2019-10-01T23:23:21-03:00
 tags = ["programming", "javascript"]
 categories = ["topic"]
 draft = false
