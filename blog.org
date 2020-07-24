@@ -40,6 +40,7 @@ too :)
 
 - [[http://lpan.io/one-liner-dropbox-client/][My one-liner Linux Dropbox Client]] (by \@l_pan_) - No HTTPS
 - [[http://www.catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] (by [[mailto:esr@thyrsus.com][Eric Steven Raymond]] and [[mailto:respond-auto@linuxmafia.com][Rick Moen]])
+- [[https://wiki.archlinux.org/index.php/IMWheel][Imwheel (changing mouse wheel behavior on Xorg)]] (by the Arch community)
 
 * Posts
 :PROPERTIES:
@@ -392,3 +393,4 @@ place at the moment, as my current goal is to get an MVP working as soon as poss
 That's all I got for now. Thanks for reading this far and if you'd like to
 contribute feel free to check [[https://github.com/RodrigoLeiteF/Station][Station's repository on Github]] or contact me at
 [[mailto:rodrigo@leite.dev][rodrigo@leite.dev]]. Issues, PRs and comments are, as always, welcome :)
+

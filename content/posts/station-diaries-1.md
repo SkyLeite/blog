@@ -1,8 +1,8 @@
 +++
-title = "Station Diaries \\#1 - Start of Something New"
+title = "Station Diaries \#1 - Start of Something New"
 author = ["Rodrigo Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2019-10-01T23:23:22-03:00
+lastmod = 2020-07-24T13:40:29-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false
@@ -18,10 +18,10 @@ That said, this convenience comes with important and potentially dangerous
 pitfalls such as giving Spotify data about what you listen, when you listen and
 where you listen. This should be enough reason to consider an alternative if
 privacy is at all important to you, but if that's not the case maybe the case
-for artist profits should be. [Spotify pays, at maximum, US$0.0084 per stream to
+for artist profits should be. [Spotify pays, at maximum, US\$0.0084 per stream to
 the holder of the music rights](https://www.cnbc.com/2018/01/26/how-spotify-apple-music-can-pay-musicians-more-commentary.html) (which includes the record label, producers,
 artists, songwriters, and who knows what else). This means that 1 million
-streams, an impressive feat if you ask me, generates US$7,000 (which the artist
+streams, an impressive feat if you ask me, generates US\$7,000 (which the artist
 might not get even half of).
 
 With those concerns in mind I decided to start [Station](https://github.com/RodrigoLeiteF/station), a self-hosted music
@@ -35,7 +35,6 @@ convenience of modern streaming services.
 Welcome to Station Diaries, a series of posts where I'll detail progress on this
 admittedly ambitious project.
 
-
 ## How? {#how}
 
 I've been writing JavaScript for a good 3 years now and my first instinct was to
@@ -48,13 +47,11 @@ Since I'm already learning an entire new language and framework, I decided to
 also go with a different approach with regards to databases. I have had so many
 terrible experiences with ORMs in the past that I couldn't justify giving yet
 another one a try, which led to using stored procedures / functions for
-everything that deals with the database. Creating a user? `SELECT * FROM
-createuser(email, password)`. It is definitely weird writing SQL as functions,
+everything that deals with the database. Creating a user? `SELECT * FROM createuser(email, password)`. It is definitely weird writing SQL as functions,
 especially considering there is no linting / completion / syntax checking
 whatsoever, but it's honestly not much different from writing JavaScript and
 running your code with pretty much no confidence that it will run. I must say I
 didn't miss the feeling of shock when you run code and it _works_, though.
-
 
 ## What? {#what}
 
@@ -63,13 +60,13 @@ maintain are:
 
 1.  Plugin system
     The application was designed from the start to work in a plugin system. By
-     default it has no knowledge of how and where to acquire tracks, it only
-     parses data returned from plugins. This allows users to extend the upload
-     system with whatever sources they'd like (Soundcloud, YouTube, etc) without
-     risking the application's legitimacy. Station in no way wants to promote
-     piracy, but there are completely valid reasons to acquire music from the
-     listed sources, so a plugin system puts that responsibility on the plugin
-     loaded by the user.
+    default it has no knowledge of how and where to acquire tracks, it only
+    parses data returned from plugins. This allows users to extend the upload
+    system with whatever sources they'd like (Soundcloud, YouTube, etc) without
+    risking the application's legitimacy. Station in no way wants to promote
+    piracy, but there are completely valid reasons to acquire music from the
+    listed sources, so a plugin system puts that responsibility on the plugin
+    loaded by the user.
 
 2.  MusicBrainz integration
     Music organization is a nightmare. There are so many edge cases that I could
