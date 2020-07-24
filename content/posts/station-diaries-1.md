@@ -1,8 +1,8 @@
 +++
-title = "Station Diaries \#1 - Start of Something New"
+title = "Station Diaries #1 - Start of Something New"
 author = ["Rodrigo Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2020-07-24T13:40:29-03:00
+lastmod = 2020-07-24T13:55:37-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false

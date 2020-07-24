@@ -293,7 +293,7 @@ believe this article can be improved.
    it inside the callback of =.then()=.
 
 
-*** DONE Station Diaries \#1 - Start of Something New :programming:station:
+*** DONE Station Diaries #1 - Start of Something New :programming:station:
 CLOSED: [2019-09-02 Mon 23:42]
 :PROPERTIES:
 :EXPORT_FILE_NAME: station-diaries-1
