@@ -2,7 +2,7 @@
 title = "Review: Final Fantasy XIV"
 author = ["Rodrigo Leite"]
 date = 2021-01-11T19:57:00-03:00
-lastmod = 2021-01-11T20:04:22-03:00
+lastmod = 2021-01-11T20:06:09-03:00
 tags = ["games", "reviews"]
 categories = ["topic"]
 draft = false
@@ -29,5 +29,3 @@ Reading this response is what made me realize what kind of experience I was payi
 I can't force you to play this game, but I hope my thoughts helped you decide for yourself. Even if you ultimately decide to not play it, I recommend you watch Noclip's FINAL FANTASY XIV Documentary on YouTube. The development cycle of FFXIV and how it went from a financial disaster to SquareEnix's biggest hit is a great story.
 
 See you in Eorzea, Warrior of Light.
-
-:EXPORT\_FILE\_NAME: station-diaries-1
