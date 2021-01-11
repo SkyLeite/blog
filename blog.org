@@ -396,8 +396,11 @@ contribute feel free to check [[https://github.com/RodrigoLeiteF/Station][Statio
 
 
 
-*** DONE Review: Final Fantasy XIV:games:reviews:
+*** DONE Review: Final Fantasy XIV :games:reviews:
 CLOSED: [2021-01-11 seg 19:57]
+:PROPERTIES:
+:EXPORT_FILE_NAME: review-final-fantasy-xiv
+:END:
 This is a copy-and-paste of my Steam Review for Final Fantasy XIV. I decided that it would be good to have it here as well for future reference, as it was extremely well received on the site.
 
 
