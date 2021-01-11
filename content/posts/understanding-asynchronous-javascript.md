@@ -2,7 +2,7 @@
 title = "Understanding Asynchronous Javascript"
 author = ["Rodrigo Leite"]
 date = 2019-06-30T03:09:00-03:00
-lastmod = 2020-07-24T13:40:29-03:00
+lastmod = 2021-01-11T20:01:27-03:00
 tags = ["programming", "javascript"]
 categories = ["topic"]
 draft = false
@@ -18,7 +18,7 @@ Take the following sample:
 
 ```js
 const add = (a, b) => {
-  return a + b;
+    return a + b;
 };
 
 const result = add(20, 10);
@@ -43,7 +43,7 @@ achieve this goal like so:
 
 ```js
 const fs = require("fs"); // Load the `fs` module.
-// It is responsible for interacting with the filesystem
+                          // It is responsible for interacting with the filesystem
 
 const fileLocation = "notes.txt";
 const fileData = fs.readFileSync(fileLocation); // Read our file into memory
@@ -58,6 +58,7 @@ confuse the end user, since the process will completely freeze until the file is
 read. A common way of adressing this issue is with loading spinners,
 but due to Javascript's single-threaded nature that's not possible, as it would
 require running code simultaneously... right?
+
 
 ## What is asynchronous? {#what-is-asynchronous}
 
@@ -78,20 +79,20 @@ const spinner = new Spinner("Processing...");
 // Define the function we want to be
 // run when the file is done being read
 const done = (error, fileData) => {
-  if (error) {
-    console.error(`ERROR: ${error}`);
-    return;
-  }
+    if (error) {
+        console.error(`ERROR: ${error}`);
+        return;
+    }
 
-  // Split our file by the newline character
-  const notes = fileData.split("\n");
+    // Split our file by the newline character
+    const notes = fileData.split("\n");
 
-  // Stop the spinner
-  spinner.stop();
+    // Stop the spinner
+    spinner.stop();
 
-  // Finally, log the result
-  console.log(`You have ${notes.length} notes`);
-};
+    // Finally, log the result
+    console.log(`You have ${notes.length} notes`);
+}
 
 // Read the file, and pass a reference to our function
 // to be run once the file is done reading
@@ -108,6 +109,7 @@ to do whatever else it wants (in this case, show our little spinner). This is
 called a _callback_, and for the longest time it was the _de facto_ way of doing
 asynchronous programming in Javascript. But such approach is not perfect.
 
+
 ## The problem with callbacks {#the-problem-with-callbacks}
 
 Expanding our example, say that in addition to displaying how many notes the
@@ -120,29 +122,29 @@ register our new callback in the `done` function, like so:
 // Define the function we want to be
 // run when the file is done being read
 const done = (error, fileData) => {
-  if (error) {
-    console.error(`ERROR: ${error}`);
-    return;
-  }
-
-  // Split our file by the newline character
-  const notes = fileData.split("\n");
-
-  // Stop the spinner
-  spinner.stop();
-
-  // Finally, log the result
-  console.log(`You have ${notes.length} notes`);
-
-  fs.stat(fileLocation, (err, fileInformation) => {
-    if (err) {
-      console.error(`ERROR: ${err}`);
-      return;
+    if (error) {
+        console.error(`ERROR: ${error}`);
+        return;
     }
 
-    console.log(`Your file has ${fileInformation.size} bytes of information`);
-  });
-};
+    // Split our file by the newline character
+    const notes = fileData.split("\n");
+
+    // Stop the spinner
+    spinner.stop();
+
+    // Finally, log the result
+    console.log(`You have ${notes.length} notes`);
+
+    fs.stat(fileLocation, (err, fileInformation) => {
+        if (err) {
+            console.error(`ERROR: ${err}`);
+            return;
+        }
+
+        console.log(`Your file has ${fileInformation.size} bytes of information`);
+    });
+}
 ```
 
 Instead of defining a second function for this, we use an inline arrow function
@@ -157,6 +159,7 @@ We can work around these issues by making each callback it's own top-level
 function, but that is cumbersome for simple operations like this. With these
 issues in mind, the community came up with Promises, which aim to provide more
 flexibility and reduce nesting when working with asynchronous Javascript.
+
 
 ## Promises {#promises}
 
@@ -178,27 +181,27 @@ const spinner = new Spinner("Processing...");
 
 // Read the file
 fs.readFile(fileLocation)
-  .then((data) => {
-    // Split our file by the newline character
-    const notes = fileData.split("\n");
+    .then((data) => {
+        // Split our file by the newline character
+        const notes = fileData.split("\n");
 
-    // Finally, log the result
-    console.log(`You have ${notes.length} notes`);
+        // Finally, log the result
+        console.log(`You have ${notes.length} notes`);
 
-    // We are done with our first promise, so we can return another one
-    // Since fs.stat returns a promise, we can conveniently return it
-    return fs.stat(fileLocation);
-  })
-  .then((data) => {
-    // Here `data` refers to the data returned by `fs.stat`
-    console.log(`Your file has ${fileInformation.size} bytes of information`);
+        // We are done with our first promise, so we can return another one
+        // Since fs.stat returns a promise, we can conveniently return it
+        return fs.stat(fileLocation);
+    })
+    .then((data) => {
+        // Here `data` refers to the data returned by `fs.stat`
+        console.log(`Your file has ${fileInformation.size} bytes of information`);
 
-    // Stop our spinner
-    spinner.stop();
-  })
-  .catch((error) => {
-    console.error(`ERROR: ${error}`);
-  });
+        // Stop our spinner
+        spinner.stop();
+    })
+    .catch((error) => {
+        console.error(`ERROR: ${error}`);
+    });
 
 spinner.start();
 ```
@@ -232,6 +235,7 @@ Javascript. There's a lot more to cover, like `async/await` and `Promise.all()`,
 but this should be enough to get you started. If you have any questions, refer
 to the FAQ and feel free to post a comment if that doesn't help or if you
 believe this article can be improved.
+
 
 ## FAQ {#faq}
 
