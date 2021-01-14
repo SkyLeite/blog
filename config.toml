@@ -18,6 +18,9 @@ disqusShortname = "rodrigoleite"
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [languages]
   [languages.en]
     title = "Rodrigo Leite"
