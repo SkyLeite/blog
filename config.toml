@@ -2,7 +2,7 @@ baseurl = "https://leite.dev"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
-disqusShortname = "rodrigoleite"
+disqusShortname = "Sky"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
@@ -23,7 +23,7 @@ disqusShortname = "rodrigoleite"
 
 [languages]
   [languages.en]
-    title = "Rodrigo Leite"
+    title = "Sky Leite"
     subtitle = ""
     keywords = "tech"
     copyright = ""
@@ -32,15 +32,15 @@ disqusShortname = "rodrigoleite"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Rodrigo Leite"
+      logoText = "Sky Leite"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "contact"
         name = "Contact Me"
-        url = "mailto:rodrigo@leite.dev"
+        url = "mailto:sky@leite.dev"
       [[languages.en.menu.main]]
         identifier = "github"
         name = "Github"
-        url = "https://github.com/RodrigoLeiteF"
+        url = "https://github.com/SkyLeite"
