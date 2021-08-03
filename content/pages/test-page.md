@@ -1,7 +1,7 @@
 +++
 title = "About"
-author = ["Rodrigo Leite"]
-lastmod = 2021-01-11T20:01:27-03:00
+author = ["Sky Leite"]
+lastmod = 2021-08-03T17:47:29-03:00
 draft = false
 weight = 2001
 noauthor = true
@@ -14,7 +14,7 @@ noread = true
   identifier = "about"
 +++
 
-Hello! I'm Rodrigo Leite, a 21 years old Software Engineer from Brazil.
+Hello! I'm Sky Leite, a 23 years old Software Engineer from Brazil.
 Fascinated by programming from a very young age, my first "real" project was a
 Discord bot used to alert users of random events in the japanese game Phantasy
 Star Online 2. It was a moderate hit, and the fact that it impacted the lives of
@@ -24,5 +24,4 @@ My goal with this blog is to share some of the knowledge I've gained over the
 years, and also improve my writing. There's also a therapeutical aspect to it I
 haven't figured out yet :P
 
-If you wish to contact me, feel free to shoot me an email at [rodrigo@leite.dev](mailto:rodrigo@leite.dev)
-or a toot at [@rodrigo@pleroma.leite.dev](https://pleroma.leite.dev/rodrigo).
+If you wish to contact me, feel free to shoot me an email at [<mailto:sky@leite.dev>][sky.dev]].

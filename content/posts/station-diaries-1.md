@@ -1,8 +1,8 @@
 +++
 title = "Station Diaries #1 - Start of Something New"
-author = ["Rodrigo Leite"]
+author = ["Sky Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2021-01-11T20:01:27-03:00
+lastmod = 2021-08-03T17:47:30-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false
@@ -24,7 +24,7 @@ artists, songwriters, and who knows what else). This means that 1 million
 streams, an impressive feat if you ask me, generates US$7,000 (which the artist
 might not get even half of).
 
-With those concerns in mind I decided to start [Station](https://github.com/RodrigoLeiteF/station), a self-hosted music
+With those concerns in mind I decided to start [Station](https://github.com/SkyLeiteF/station), a self-hosted music
 streaming service, in hopes of encouraging people to start buying music once
 again or suport their favorite artists in some other way (like going to concerts!).
 The idea is that you set it up once and are on your way to having your very own
@@ -34,7 +34,6 @@ convenience of modern streaming services.
 
 Welcome to Station Diaries, a series of posts where I'll detail progress on this
 admittedly ambitious project.
-
 
 ## How? {#how}
 
@@ -48,13 +47,11 @@ Since I'm already learning an entire new language and framework, I decided to
 also go with a different approach with regards to databases. I have had so many
 terrible experiences with ORMs in the past that I couldn't justify giving yet
 another one a try, which led to using stored procedures / functions for
-everything that deals with the database. Creating a user? `SELECT * FROM
-createuser(email, password)`. It is definitely weird writing SQL as functions,
+everything that deals with the database. Creating a user? `SELECT * FROM createuser(email, password)`. It is definitely weird writing SQL as functions,
 especially considering there is no linting / completion / syntax checking
 whatsoever, but it's honestly not much different from writing JavaScript and
 running your code with pretty much no confidence that it will run. I must say I
 didn't miss the feeling of shock when you run code and it _works_, though.
-
 
 ## What? {#what}
 
@@ -63,13 +60,13 @@ maintain are:
 
 1.  Plugin system
     The application was designed from the start to work in a plugin system. By
-     default it has no knowledge of how and where to acquire tracks, it only
-     parses data returned from plugins. This allows users to extend the upload
-     system with whatever sources they'd like (Soundcloud, YouTube, etc) without
-     risking the application's legitimacy. Station in no way wants to promote
-     piracy, but there are completely valid reasons to acquire music from the
-     listed sources, so a plugin system puts that responsibility on the plugin
-     loaded by the user.
+    default it has no knowledge of how and where to acquire tracks, it only
+    parses data returned from plugins. This allows users to extend the upload
+    system with whatever sources they'd like (Soundcloud, YouTube, etc) without
+    risking the application's legitimacy. Station in no way wants to promote
+    piracy, but there are completely valid reasons to acquire music from the
+    listed sources, so a plugin system puts that responsibility on the plugin
+    loaded by the user.
 
 2.  MusicBrainz integration
     Music organization is a nightmare. There are so many edge cases that I could
@@ -102,5 +99,5 @@ Currently I'm working on the authentication system using ASP.NET's
 place at the moment, as my current goal is to get an MVP working as soon as possible.
 
 That's all I got for now. Thanks for reading this far and if you'd like to
-contribute feel free to check [Station's repository on Github](https://github.com/RodrigoLeiteF/Station) or contact me at
-[rodrigo@leite.dev](mailto:rodrigo@leite.dev). Issues, PRs and comments are, as always, welcome :)
+contribute feel free to check [Station's repository on Github](https://github.com/SkyLeiteF/Station) or contact me at
+[sky@leite.dev](mailto:sky@leite.dev). Issues, PRs and comments are, as always, welcome :)

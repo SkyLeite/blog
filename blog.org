@@ -1,5 +1,5 @@
 #+STARTUP: content
-#+AUTHOR: Rodrigo Leite
+#+AUTHOR: Sky Leite
 #+HUGO_BASE_DIR: ./
 #+HUGO_SECTION: ./
 #+HUGO_AUTO_SET_LASTMOD: t
@@ -17,7 +17,7 @@
 :EXPORT_FILE_NAME: test-page
 :END:
 
-Hello! I'm Rodrigo Leite, a 21 years old Software Engineer from Brazil.
+Hello! I'm Sky Leite, a 23 years old Software Engineer from Brazil.
 Fascinated by programming from a very young age, my first "real" project was a
 Discord bot used to alert users of random events in the japanese game Phantasy
 Star Online 2. It was a moderate hit, and the fact that it impacted the lives of
@@ -27,8 +27,7 @@ My goal with this blog is to share some of the knowledge I've gained over the
 years, and also improve my writing. There's also a therapeutical aspect to it I
 haven't figured out yet :P
 
-If you wish to contact me, feel free to shoot me an email at [[mailto:rodrigo@leite.dev][rodrigo@leite.dev]]
-or a toot at [[https://pleroma.leite.dev/rodrigo][@rodrigo@pleroma.leite.dev]].
+If you wish to contact me, feel free to shoot me an email at [mailto:sky@leite.dev][sky.dev]].
 
 ** Library
 :PROPERTIES:
@@ -316,7 +315,7 @@ artists, songwriters, and who knows what else). This means that 1 million
 streams, an impressive feat if you ask me, generates US$7,000 (which the artist
 might not get even half of).
 
-With those concerns in mind I decided to start [[https://github.com/RodrigoLeiteF/station][Station]], a self-hosted music
+With those concerns in mind I decided to start [[https://github.com/SkyLeiteF/station][Station]], a self-hosted music
 streaming service, in hopes of encouraging people to start buying music once
 again or suport their favorite artists in some other way (like going to concerts!).
 The idea is that you set it up once and are on your way to having your very own
@@ -392,8 +391,8 @@ Currently I'm working on the authentication system using ASP.NET's
 place at the moment, as my current goal is to get an MVP working as soon as possible.
 
 That's all I got for now. Thanks for reading this far and if you'd like to
-contribute feel free to check [[https://github.com/RodrigoLeiteF/Station][Station's repository on Github]] or contact me at
-[[mailto:rodrigo@leite.dev][rodrigo@leite.dev]]. Issues, PRs and comments are, as always, welcome :)
+contribute feel free to check [[https://github.com/SkyLeiteF/Station][Station's repository on Github]] or contact me at
+[[mailto:sky@leite.dev][sky@leite.dev]]. Issues, PRs and comments are, as always, welcome :)
 
 
 
@@ -432,7 +431,7 @@ CLOSED: [2021-01-13 qua 18:06]
 :EXPORT_FILE_NAME: manipulation-app
 :END:
 
-I have this insatiable desire to create, and it is ultimately what led me to start my programming career with [[https://github.com/RodrigoLeiteF/WeebBot-v2][Weeb Bot]] back in 2016. However, after finishing it I could never bring myself to lead another project to completion. Along with the normal impostor syndrome that comes with working in a field filled with so many incredibly talented people, it led me to develop anxiety over starting new projects and bringing ideas to life. After going through therapy, I'm glad to announce I'm working on yet another project called Manipulation.app, a web application designed to guide you through your crafting experience in Final Fantasy XIV.
+I have this insatiable desire to create, and it is ultimately what led me to start my programming career with [[https://github.com/SkyLeiteF/WeebBot-v2][Weeb Bot]] back in 2016. However, after finishing it I could never bring myself to lead another project to completion. Along with the normal impostor syndrome that comes with working in a field filled with so many incredibly talented people, it led me to develop anxiety over starting new projects and bringing ideas to life. After going through therapy, I'm glad to announce I'm working on yet another project called Manipulation.app, a web application designed to guide you through your crafting experience in Final Fantasy XIV.
 
 **** The problem
 
@@ -470,7 +469,22 @@ I love Elm. Developing for the Browser is a much more pleasant experience when i
 
 **** The release
 
-As of right now, Manipulation.app is not yet released. I'm working on it full-time, and expect an open beta to be completed in a month or so. In the meantime, you can follow the development on [[https://github.com/rodrigoleitef/craftup][the Github repository]] or my account [[https://mastodon.technology/@kaze][@kaze@mastodon.technology]], and feel free to shoot me an e-mail at [[mailto:rodrigo@leite.dev][rodrigo@leite.dev]].
+As of right now, Manipulation.app is not yet released. I'm working on it full-time, and expect an open beta to be completed in a month or so. In the meantime, you can follow the development on [[https://github.com/skyleitef/craftup][the Github repository]] or my account [[https://mastodon.technology/@kaze][@kaze@mastodon.technology]], and feel free to shoot me an e-mail at [[mailto:sky@leite.dev][sky@leite.dev]].
+
+
+*** TODO Persona 4
+
+    I'm not a fan of animated series. Specifically, I've always had a really hard time relating to japanese animation because more often than not the characters' experiences do not mimic my own in high school at all. This causes an uncomfortable disconnect, where I'm intrigued by the extremely compelling and out of the norm premises but cannot relate to any of the main characters. Of course, in such an old medium there are bound to be series that portray experiences I can relate to, and one of them is Kaiji: Ultimate Survivor -- the life of a young adult who finds himself in crippling debt and has to put his life on the line on a sadistic game to be get out of it.
+
+    You must be asking yourself what any of this has to do with Persona, which is a fair question. At the time of writing I'm a relatively successful person at the age of 23, and could not be further from the reality that Persona 4 expressses, and that was also true in my teenage years. I wasn't good in school, I didn't have tens of +social links+ friends and I certainly didn't have a TV I could jump into to escape reality. My teenage years were fairly run-of-the-mill, and I believe that's the reason I hated my every minute with the Persona series back then. As an impressionable teenager, seeing such an interesting and diverse day-to-day on the small screen of my PSP made me feel like /that/ was the life I was supposed to be living, not the boring and uneventful one I was stuck with. And now, as a fully formed adult, that's not the case anymore.
+
+**** The Setting
+
+    Persona 4 starts with you, the main character, moving from the city to a small town in countryside Japan to live with your uncle Mr. Dojima, a detective at the local police station, and his young daughter Nanako. The game quickly turns into a murder mystery when a local journalist is found dead after being outer as a famous man's mistress. The town of Inaba sets the mood perfectly to this premise, with its quiet nights, rainy days and huge empty lots by the roadside. This is a setting you're familiar with if you've ever interacted with the When They Cry series, which predates Persona 4 by 6 years.
+
+    Another interesting view on Persona 4's setting is that it doesn't need Persona 3's on-the-nose themes of death and darkness to be frightening or uncomfortable. Here most of the tense action happens in either broad daylight or the cheery and colorful TV world (more on that later), almost making you scared of the broad daylight. If you've ever seen The Texas Chainsaw Massacre you're more than familiar with this dichotomy, where not even the sun can save you and your friends, and it's incredibly refreshing to see a take on this concept from a video game.
+
+    In contrary to most video games featuring co-protagonists, in Persona 4 your friends are extremely important in every single aspect of your experience. After all, you're still a high schooler and you have no one you can relate to besides the other teenagers who are going through the same hellish years you are. Just like in real life, you need friends to survive not only the hardships life throws at you, but also the ones you create in your own head through trauma, stress, anger and anxiety. Where usually a video game would emphasize the importance of your friends through an instant game over screen when they die in combat, Persona 4 integrates it into the narrative through Social Links. Spending time with your friends makes you closer, increasing the knowledge you have of each other and the power you gain from extending your support network through (meaningful) stat bonuses when creating Personas compatible with each Social Link.
 
 
 *** DONE On short media :games:anime:

@@ -1,8 +1,8 @@
 +++
 title = "On short media"
-author = ["Rodrigo Leite"]
+author = ["Sky Leite"]
 date = 2021-05-12T12:53:00-03:00
-lastmod = 2021-05-12T12:54:58-03:00
+lastmod = 2021-08-03T17:47:32-03:00
 tags = ["games", "anime"]
 categories = ["topic"]
 draft = false
