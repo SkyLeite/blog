@@ -391,7 +391,7 @@ Currently I'm working on the authentication system using ASP.NET's
 place at the moment, as my current goal is to get an MVP working as soon as possible.
 
 That's all I got for now. Thanks for reading this far and if you'd like to
-contribute feel free to check [[https://github.com/SkyLeiteF/Station][Station's repository on Github]] or contact me at
+contribute feel free to check [[https://github.com/SkyLeite/Station][Station's repository on Github]] or contact me at
 [[mailto:sky@leite.dev][sky@leite.dev]]. Issues, PRs and comments are, as always, welcome :)
 
 
@@ -469,7 +469,7 @@ I love Elm. Developing for the Browser is a much more pleasant experience when i
 
 **** The release
 
-As of right now, Manipulation.app is not yet released. I'm working on it full-time, and expect an open beta to be completed in a month or so. In the meantime, you can follow the development on [[https://github.com/skyleitef/craftup][the Github repository]] or my account [[https://mastodon.technology/@kaze][@kaze@mastodon.technology]], and feel free to shoot me an e-mail at [[mailto:sky@leite.dev][sky@leite.dev]].
+As of right now, Manipulation.app is not yet released. I'm working on it full-time, and expect an open beta to be completed in a month or so. In the meantime, you can follow the development on [[https://github.com/skyleite/craftup][the Github repository]] or my account [[https://mastodon.technology/@kaze][@kaze@mastodon.technology]], and feel free to shoot me an e-mail at [[mailto:sky@leite.dev][sky@leite.dev]].
 
 
 *** TODO Persona 4

@@ -2,7 +2,7 @@
 title = "Station Diaries #1 - Start of Something New"
 author = ["Sky Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2021-08-03T17:47:30-03:00
+lastmod = 2021-09-11T18:26:25-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false
@@ -99,5 +99,5 @@ Currently I'm working on the authentication system using ASP.NET's
 place at the moment, as my current goal is to get an MVP working as soon as possible.
 
 That's all I got for now. Thanks for reading this far and if you'd like to
-contribute feel free to check [Station's repository on Github](https://github.com/SkyLeiteF/Station) or contact me at
+contribute feel free to check [Station's repository on Github](https://github.com/SkyLeite/Station) or contact me at
 [sky@leite.dev](mailto:sky@leite.dev). Issues, PRs and comments are, as always, welcome :)

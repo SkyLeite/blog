@@ -2,7 +2,7 @@
 title = "Manipulation.app"
 author = ["Sky Leite"]
 date = 2021-01-13T18:06:00-03:00
-lastmod = 2021-08-03T17:47:31-03:00
+lastmod = 2021-09-11T18:25:34-03:00
 categories = ["topic"]
 draft = false
 +++
@@ -43,4 +43,4 @@ I love Elm. Developing for the Browser is a much more pleasant experience when i
 
 ## The release {#the-release}
 
-As of right now, Manipulation.app is not yet released. I'm working on it full-time, and expect an open beta to be completed in a month or so. In the meantime, you can follow the development on [the Github repository](https://github.com/skyleitef/craftup) or my account [@kaze@mastodon.technology](https://mastodon.technology/@kaze), and feel free to shoot me an e-mail at [sky@leite.dev](mailto:sky@leite.dev).
+As of right now, Manipulation.app is not yet released. I'm working on it full-time, and expect an open beta to be completed in a month or so. In the meantime, you can follow the development on [the Github repository](https://github.com/skyleite/craftup) or my account [@kaze@mastodon.technology](https://mastodon.technology/@kaze), and feel free to shoot me an e-mail at [sky@leite.dev](mailto:sky@leite.dev).
