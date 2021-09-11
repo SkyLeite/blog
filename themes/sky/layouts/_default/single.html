@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <main aria-role="main">
+    <header class="homepage-header">
+      <h1><a href="/">{{.Site.Title}}</a></h1>
+      {{ .Render "mainnav" }}
+    </header>
+    <section id="posts">
+        {{.Render "summary"}}
+    </section>
+  </main>
+{{ end }}

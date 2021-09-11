@@ -1,0 +1,33 @@
+{{ define "main" }}
+<nav>
+    {{ with .PrevInSection }}
+        <a class="previous" href="{{.Permalink}}"><- {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+        <a class="next" href="{{.Permalink}}"> {{.Title}} -></a>
+    {{ end }}
+</nav>
+
+<article id="main">
+    <h1 id="title"><a href="{{ .URL }}">{{ .Title }}</a></h1>
+
+    <span class="article-info">
+        Published on {{ .PublishDate.Format "January 2, 2006" }}
+    </span>
+
+    <span class="word-count">{{ .WordCount }} Words</span>
+
+    {{ with .Params.tags }}
+    <ul class="tags">
+        {{ range . }}
+            <li>
+                <a href="{{ "tags" | absURL }}/{{ . | urlize }}">#{{ . }}</a>
+            </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    <div>
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

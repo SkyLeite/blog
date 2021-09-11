@@ -1,6 +1,6 @@
 baseurl = "https://leite.dev"
 languageCode = "en-us"
-theme = "terminal"
+theme = "sky"
 paginate = 5
 disqusShortname = "Sky"
 

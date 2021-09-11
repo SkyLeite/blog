@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Karma;
+  src: url("Karma-Regular.ttf");
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("woff2/FiraCode-Regular.woff2") format("woff2"),
+    url("woff/FiraCode-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url("Inconsolata.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Inconsolata;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: contextual;
+
+  background-color: #f9f9f9;
+  line-height: 1.35rem;
+  font-size: 1.05rem;
+}
+
+main {
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 a:link,
+    a:visited {
+      text-decoration: none;
+    }
+
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+article {
+  padding: 1rem;
+  width: 1100px;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0.8rem 0 0.8rem 0;
+  }
+
+  span.article-info {
+  }
+
+  span.word-count {
+    float: right;
+  }
+
+  ul.tags {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 1rem;
+
+    li:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  code:not([data-lang]) {
+    font-size: 0.8em;
+    background-color: grey;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    box-decoration-break: clone;
+  }
+
+  .highlight {
+    pre {
+      border-radius: 0.4rem;
+      padding: 1rem;
+    }
+  }
+}
+
+div#content > nav {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+section#posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

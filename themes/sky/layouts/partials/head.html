@@ -1,0 +1,18 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://livejs.com/live.js"></script>
+
+    {{ $sass := resources.Get "main.scss" }}
+    {{ $styles := $sass | resources.ToCSS }}
+
+    {{ if .Site.IsServer }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+    {{ else }}
+        {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
+    {{ end }}
+
+    <title>{{ .Site.Title }}</title>
+</head>

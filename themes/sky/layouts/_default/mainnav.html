@@ -1,0 +1,20 @@
+<nav>
+    <ul>
+    {{ range (where .Site.RegularPages "Type" "==" "pages") }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+    {{ end }}
+        <li>
+            <a href="/posts">Posts</a>
+        </li>
+
+        <li>
+            <a href="https://github.com/SkyLeite" target="_blank">Github</a>
+        </li>
+
+        <li>
+            <a href="mailto:sky@leite.dev">Contact Me</a>
+        </li>
+    </ul>
+</nav>
