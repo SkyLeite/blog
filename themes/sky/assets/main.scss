@@ -61,14 +61,12 @@ main {
 
 article {
   padding: 1rem;
-  width: 1100px;
+  max-width: 1100px;
 
   h1 {
     font-size: 2rem;
     margin: 0.8rem 0 0.8rem 0;
-  }
-
-  span.article-info {
+    line-height: 2rem;
   }
 
   span.word-count {
