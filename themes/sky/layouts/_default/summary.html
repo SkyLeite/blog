@@ -1,4 +1,3 @@
-{{ define "main" }}
 <nav>
     {{ with .PrevInSection }}
         <a class="previous" href="{{.Permalink}}"><- {{.Title}}</a>
@@ -30,4 +29,3 @@
         {{ .Content }}
     </div>
 </article>
-{{ end }}
