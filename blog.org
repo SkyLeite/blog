@@ -503,6 +503,7 @@ If you're one of the people who immediately jump to the conclusion that a game's
 
 
 *** DONE Lessons I learned from getting infected by a crypto miner
+CLOSED: [2021-10-08 Fri 23:26]
 :PROPERTIES:
 :EXPORT_FILE_NAME: docker-crypto-miner
 :END:

@@ -1,7 +1,8 @@
 +++
 title = "Lessons I learned from getting infected by a crypto miner"
 author = ["Sky Leite"]
-lastmod = 2021-10-08T23:22:40-03:00
+date = 2021-10-08T23:26:00-03:00
+lastmod = 2021-10-08T23:26:14-03:00
 categories = ["topic"]
 draft = false
 +++
