@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     {{ else }}
         {{ $styles := $styles | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
     {{ end }}
 
     <title>{{ .Site.Title }}</title>
