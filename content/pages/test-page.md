@@ -1,7 +1,7 @@
 +++
 title = "About"
 author = ["Sky Leite"]
-lastmod = 2021-08-03T17:47:29-03:00
+lastmod = 2022-05-25T11:53:50-03:00
 draft = false
 weight = 2001
 noauthor = true
@@ -9,9 +9,10 @@ nocomment = true
 nodate = true
 nopaging = true
 noread = true
-[menu.main]
-  weight = 2001
-  identifier = "about"
+[menu]
+  [menu.main]
+    weight = 2001
+    identifier = "about"
 +++
 
 Hello! I'm Sky Leite, a 23 years old Software Engineer from Brazil.
