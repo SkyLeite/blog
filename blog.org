@@ -37,11 +37,12 @@ If you wish to contact me, feel free to shoot me an email at [mailto:sky@leite.d
 This page lists helpful articles I came across online. Maybe they'll help you
 too :)
 
-- [[http://lpan.io/one-liner-dropbox-client/][My one-liner Linux Dropbox Client]] (by \@l_pan_) - No HTTPS
+- [[http://lpan.io/one-liner-dropbox-client/][My one-liner Linux Dropbox Client]] (by @l_pan_)
 - [[http://www.catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] (by [[mailto:esr@thyrsus.com][Eric Steven Raymond]] and [[mailto:respond-auto@linuxmafia.com][Rick Moen]])
 - [[https://wiki.archlinux.org/index.php/IMWheel][Imwheel (changing mouse wheel behavior on Xorg)]] (by the Arch community)
 - [[https://www.norvig.com/21-days.html][Teach Yourself Programming in Ten Years]] (by Peter Norvig)
 - [[https://practicalgit.com/blog/make-git-ignore-local-changes-to-tracked-files.html][Make git ignore local changes to tracked files]] (by Practical Git)
+- [[http://mbork.pl/2018-10-14_Magit_and_C-u_i][Magit and C-u i]] (by Marcin Borkowski)
 
 * Posts
 :PROPERTIES:
