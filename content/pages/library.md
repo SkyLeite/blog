@@ -1,7 +1,7 @@
 +++
 title = "Library"
 author = ["Sky Leite"]
-lastmod = 2022-05-25T11:53:50-03:00
+lastmod = 2022-06-25T11:36:32-03:00
 draft = false
 weight = 2002
 noauthor = true
@@ -18,7 +18,7 @@ noread = true
 This page lists helpful articles I came across online. Maybe they'll help you
 too :)
 
--   [My one-liner Linux Dropbox Client](http://lpan.io/one-liner-dropbox-client/) (by @l_pan\_)
+-   [My one-liner Linux Dropbox Client](https://web.archive.org/web/20220503214306/http://lpan.io/one-liner-dropbox-client/) (by @l_pan\_)
 -   [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) (by [Eric Steven Raymond](mailto:esr@thyrsus.com) and [Rick Moen](mailto:respond-auto@linuxmafia.com))
 -   [Imwheel (changing mouse wheel behavior on Xorg)](https://wiki.archlinux.org/index.php/IMWheel) (by the Arch community)
 -   [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html) (by Peter Norvig)
