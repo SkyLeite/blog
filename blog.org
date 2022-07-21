@@ -555,7 +555,7 @@ The world waiting for you at the other end of the Ethernet cable does not care a
 Someone in China is probably a few dollars richer now, and all I got in return was more awareness about security and online responsibility. At least all it cost me was a few CPU cores.
 
 *** DONE Review: Danganronpa V3: Killing Harmony :games:reviews:
-CLOSED: [2021-01-11 seg 19:57]
+CLOSED: [2022-07-04 seg 9:51]
 :PROPERTIES:
 :EXPORT_FILE_NAME: review-danganronpa-v3-killing-harmony
 :END:
