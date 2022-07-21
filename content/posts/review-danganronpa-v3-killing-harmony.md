@@ -2,7 +2,7 @@
 title = "Review: Danganronpa V3: Killing Harmony"
 author = ["Sky Leite"]
 date = 2022-07-04T09:51:00-03:00
-lastmod = 2022-07-20T21:48:45-03:00
+lastmod = 2022-07-20T21:49:45-03:00
 tags = ["games", "reviews"]
 categories = ["topic"]
 draft = false
@@ -20,4 +20,4 @@ In the moment this works very well. It comes completely out of left field and th
 
 This is a position similar to the one that led Twin Peaks to exist, but it seems to miss the entire point of the show it is taking influence from. Lynch doesn't think fictional murder is bad, or that audiences are depraved for enjoying that kind of content, but rather that murder doesn't always have to be the entire point. It's a much less judgemental and subtle commentary on the subject, and it certainly didn't need a literal fucking boss fight with a stand-in for the audience to deliver that message.
 
-Miu is the best character ever written though. 10/1
+Miu is the best character ever written though. 10/10
