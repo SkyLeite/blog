@@ -4,6 +4,13 @@
 
     {{ $sass := resources.Get "main.scss" }}
     {{ $styles := $sass | resources.ToCSS }}
+    {{ $articleTitle := "" }}
+
+    {{ if eq .Title .Site.Title }}
+      {{ $articleTitle = (index (where .Site.RegularPages "Type" "==" "posts") 0).Title }}
+    {{ else }}
+      {{ $articleTitle = .Title }}
+    {{ end }}
 
     {{ if .Site.IsServer }}
 	<script src="https://livejs.com/live.js"></script>
@@ -13,5 +20,11 @@
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
     {{ end }}
 
-    <title>{{ .Site.Title }}</title>
+    <title>
+        {{ $articleTitle }} | {{ .Site.Title }}
+    </title>
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="{{ $articleTitle }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
 </head>
