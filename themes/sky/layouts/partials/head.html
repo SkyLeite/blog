@@ -20,6 +20,10 @@
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
     {{ end }}
 
+    <!-- This is for syntax highlighting in code blocks. Feel free to block it if you'd like -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
     <title>
         {{ $articleTitle }} | {{ .Site.Title }}
     </title>
