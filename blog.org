@@ -43,6 +43,7 @@ too :)
 - [[https://www.norvig.com/21-days.html][Teach Yourself Programming in Ten Years]] (by Peter Norvig)
 - [[https://practicalgit.com/blog/make-git-ignore-local-changes-to-tracked-files.html][Make git ignore local changes to tracked files]] (by Practical Git)
 - [[http://mbork.pl/2018-10-14_Magit_and_C-u_i][Magit and C-u i]] (by Marcin Borkowski)
+- [[https://blog.jmgilman.com/writing-a-flake-library/][Writing a Nix Flake Library]] (by Joshua Gilman)
 
 * Posts
 :PROPERTIES:
