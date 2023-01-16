@@ -2,7 +2,7 @@
 title = "Review: Final Fantasy XIV"
 author = ["Sky Leite"]
 date = 2021-01-11T19:57:00-03:00
-lastmod = 2021-08-03T17:47:31-03:00
+lastmod = 2023-01-16T13:45:30-03:00
 tags = ["games", "reviews"]
 categories = ["topic"]
 draft = false

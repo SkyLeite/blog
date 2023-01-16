@@ -2,7 +2,7 @@
 title = "Station Diaries #1 - Start of Something New"
 author = ["Sky Leite"]
 date = 2019-09-02T23:42:00-03:00
-lastmod = 2022-05-25T11:53:50-03:00
+lastmod = 2023-01-16T13:45:30-03:00
 tags = ["programming", "station"]
 categories = ["topic"]
 draft = false

@@ -2,7 +2,7 @@
 title = "Review: Danganronpa V3: Killing Harmony"
 author = ["Sky Leite"]
 date = 2022-07-04T09:51:00-03:00
-lastmod = 2022-07-20T21:49:45-03:00
+lastmod = 2023-01-16T13:45:30-03:00
 tags = ["games", "reviews"]
 categories = ["topic"]
 draft = false

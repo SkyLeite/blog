@@ -2,7 +2,7 @@
 title = "On short media"
 author = ["Sky Leite"]
 date = 2021-05-12T12:53:00-03:00
-lastmod = 2021-08-03T17:47:32-03:00
+lastmod = 2023-01-16T13:45:30-03:00
 tags = ["games", "anime"]
 categories = ["topic"]
 draft = false

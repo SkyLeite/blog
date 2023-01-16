@@ -2,7 +2,7 @@
 title = "Understanding Asynchronous Javascript"
 author = ["Sky Leite"]
 date = 2019-06-30T03:09:00-03:00
-lastmod = 2022-05-25T11:53:50-03:00
+lastmod = 2023-01-16T13:45:30-03:00
 tags = ["programming", "javascript"]
 categories = ["topic"]
 draft = false

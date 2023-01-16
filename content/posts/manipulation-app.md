@@ -2,7 +2,7 @@
 title = "Manipulation.app"
 author = ["Sky Leite"]
 date = 2021-01-13T18:06:00-03:00
-lastmod = 2022-05-25T11:53:50-03:00
+lastmod = 2023-01-16T13:45:30-03:00
 categories = ["topic"]
 draft = false
 +++

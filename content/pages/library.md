@@ -1,7 +1,7 @@
 +++
 title = "Library"
 author = ["Sky Leite"]
-lastmod = 2022-06-25T11:36:32-03:00
+lastmod = 2023-01-16T13:45:29-03:00
 draft = false
 weight = 2002
 noauthor = true
@@ -24,3 +24,4 @@ too :)
 -   [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html) (by Peter Norvig)
 -   [Make git ignore local changes to tracked files](https://practicalgit.com/blog/make-git-ignore-local-changes-to-tracked-files.html) (by Practical Git)
 -   [Magit and C-u i](http://mbork.pl/2018-10-14_Magit_and_C-u_i) (by Marcin Borkowski)
+-   [Writing a Nix Flake Library](https://blog.jmgilman.com/writing-a-flake-library/) (by Joshua Gilman)

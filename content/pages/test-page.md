@@ -1,7 +1,7 @@
 +++
 title = "About"
 author = ["Sky Leite"]
-lastmod = 2022-05-25T11:53:50-03:00
+lastmod = 2023-01-16T13:45:29-03:00
 draft = false
 weight = 2001
 noauthor = true
