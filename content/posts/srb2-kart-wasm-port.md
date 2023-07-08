@@ -2,7 +2,7 @@
 title = "Porting a mod of a mod of Doom to WebAssembly"
 author = ["Sky Leite"]
 date = 2023-07-08T19:59:00-03:00
-lastmod = 2023-07-08T19:59:16-03:00
+lastmod = 2023-07-08T20:02:23-03:00
 tags = ["games", "programming"]
 categories = ["topic"]
 draft = false
@@ -64,27 +64,26 @@ Over the next couple of days, I implemented a way to add Addons to the game stra
 
 So... Now what? I do have quite a few plans for this, actually! Here's a list in no particular order:
 
-Netplay
-: this will be absurdly complex since SRB2 uses UDP for connections, which is not supported in browsers. I will have to either settle for web-to-web multiplayer, or add support for something like WebRTC to SRB2Kart v1.7 (presuming the maintainers would even agree to that!)
+-   Netplay (this will be absurdly complex since SRB2 uses UDP for connections, which is not supported in browsers. I will have to either settle for web-to-web multiplayer, or add support for something like WebRTC to SRB2Kart v1.7 [presuming the maintainers would even agree to that!])
 
-Improved management of addons, like adding and removing in bulk, persisting addons through sessions, etc.
+-   Improved management of addons, like adding and removing in bulk, persisting addons through sessions, etc.
 
-Download addons from the SRB2 Message Board directly to a running instance of SRB2Kart
+-   Download addons from the SRB2 Message Board directly to a running instance of SRB2Kart
 
-Adjust client settings from JavaScript, which would allow persisting such settings between sessions
+-   Adjust client settings from JavaScript, which would allow persisting such settings between sessions
 
-Improved presentation. The website looks and feels somewhat janky at the moment
+-   Improved presentation. The website looks and feels somewhat janky at the moment
 
-Host assets on Cloudflare to improve load times
+-   Host assets on Cloudflare to improve load times
 
-Disable in-game menus that don't work like Multiplayer
+-   Disable in-game menus that don't work like Multiplayer
 
-Download your own replays
+-   Download your own replays
 
-Share lists of addons with friends using simple URLs
+-   Share lists of addons with friends using simple URLs
 
-Direct links to races with pre-defined addons, so modders can have something like a "Try in SRB2Kart Web" button in their threads
+-   Direct links to races with pre-defined addons, so modders can have something like a "Try in SRB2Kart Web" button in their threads
 
-Do everything all over again for (non-kart) Sonic Robo Blast 2 so everyone can bask in the glory of SRB2Infinity
+-   Do everything all over again for (non-kart) Sonic Robo Blast 2 so everyone can bask in the glory of SRB2Infinity
 
 If this was interesting to you, feel free to head to <https://skyleite.github.io/Kart-Public-WASM/> and try it out for yourself. Please forgive any jank you might encounter. I would be glad to receive any piece of feedback through the comments, [e-mail](mailto:sky@leite.dev), or [the project's Github repository](https://github.com/SkyLeite/Kart-Public-WASM/blob/ed4069b48c2a5d6bb07c3904f3d8a845e86e174d/build.sh).
