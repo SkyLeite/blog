@@ -2,11 +2,13 @@
 title = "Porting a mod of a mod of Doom to WebAssembly"
 author = ["Sky Leite"]
 date = 2023-07-08T19:59:00-03:00
-lastmod = 2023-07-08T20:02:23-03:00
+lastmod = 2023-07-09T16:30:28-03:00
 tags = ["games", "programming"]
 categories = ["topic"]
 draft = false
 +++
+
+2023/07/09 EDIT: Fuck it I ported the other game too LOL. [Play Sonic Robo Blast 2 here](https://skyleite.github.io/SRB2-WASM/)
 
 You read the title correctly. This is a blog post about how I ported a mod of a mod of Doom to WebAssembly, essentially allowing it to run in any device with a web browser from the past decade.
 
@@ -18,7 +20,7 @@ If you have no idea what I'm talking about, let me explain. The game in question
 
 I've been playing Sonic Robo Blast 2 Kart (from now on abbreviated as SRB2Kart) on and off since release, with not much interest due to the game's delay-based netcode, which essentially means it sucks to play with anyone who's physically far away from you. This changed some time ago when I discovered the brazilian community for the game, which runs regular tournaments, 24/7 servers filled to the brim with brazilian memes (like the Fiat Uno with a ladder on top, fabled to be the fastest car in existance). It was then that I learned how much fun SRB2Kart could be, and began playing more often, which led me to consider bringing it up as a potential game for my team at work to play during our Social hours. Unfortunately, the requirement to download anything is a huge barrier for playing anything ad-hoc, so I held off on it for a while, until one day I realized there was a chance this game could run perfectly on the browser. I mean, [QuakeJS](http://www.quakejs.com/) did it so why can't we?
 
-On September 3rd, 2023 I decided to consider doing it myself, and sent [Tyron](https://worldsbe.st/) a message on Discord to ask if someone had already done this work. The following excerpt sums it up pretty well:
+On July 3rd, 2023 I decided to consider doing it myself, and sent [Tyron](https://worldsbe.st/) a message on Discord to ask if someone had already done this work. The following excerpt sums it up pretty well:
 
 {{< figure src="https://i.ibb.co/2hhP82g/image.png" caption="<span class=\"figure-number\">Figure 1: </span>Maybe I should've listened" class="center" >}}
 
