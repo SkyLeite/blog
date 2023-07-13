@@ -63,6 +63,16 @@ article {
 
   figure {
     text-align: center;
+    margin: 0;
+
+    @media (min-width: 960px) {
+      margin: 20px;
+    }
+
+    img {
+      object-fit: scale-down;
+      max-width: 100%;
+    }
   }
 
   code:not([data-lang]) {
