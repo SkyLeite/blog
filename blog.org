@@ -27,7 +27,7 @@ My goal with this blog is to share some of the knowledge I've gained over the
 years, and also improve my writing. There's also a therapeutical aspect to it I
 haven't figured out yet :P
 
-If you wish to contact me, feel free to shoot me an email at [mailto:sky@leite.dev][sky.dev]].
+If you wish to contact me, feel free to shoot me an email at [[mailto:sky@leite.dev][sky@leite.dev]].
 
 ** Library
 :PROPERTIES:

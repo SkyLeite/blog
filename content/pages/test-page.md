@@ -1,7 +1,7 @@
 +++
 title = "About"
 author = ["Sky Leite"]
-lastmod = 2023-01-16T13:45:29-03:00
+lastmod = 2023-07-13T11:19:07-03:00
 draft = false
 weight = 2001
 noauthor = true
@@ -25,4 +25,4 @@ My goal with this blog is to share some of the knowledge I've gained over the
 years, and also improve my writing. There's also a therapeutical aspect to it I
 haven't figured out yet :P
 
-If you wish to contact me, feel free to shoot me an email at [<mailto:sky@leite.dev>][sky.dev]].
+If you wish to contact me, feel free to shoot me an email at [sky@leite.dev](mailto:sky@leite.dev).
