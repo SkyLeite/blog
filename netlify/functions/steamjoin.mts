@@ -1,4 +1,5 @@
 import type { Context } from "@netlify/functions";
+import xml2js from "xml2js";
 
 export default async (req: Request, context: Context) => {
   const { user_id } = context.params;
@@ -8,24 +9,45 @@ export default async (req: Request, context: Context) => {
 
   const steam_player = steam_json.response.players[0];
   if (!steam_player) {
-    let response = new Response("Player not found", { status: 404 });
+    const response = new Response("Player not found", { status: 404 });
     return response;
   }
 
   const game_id = steam_player.gameid;
   if (!game_id) {
-    let response = new Response("Player is not currently in a game", { status: 400 });
+    const response = new Response("Player is not currently in a game", { status: 400 });
     return response;
   }
 
   const lobby_id = steam_player.lobbysteamid;
   if (!lobby_id) {
-    let response = new Response("Player is not currently in a lobby", { status: 400 });
+    const response = new Response("Player is not currently in a lobby", { status: 400 });
     return response;
   }
 
-  let response = new Response("Moved", { status: 301 });
-  response.headers.set("Location", `steam://joinlobby/${game_id}/${lobby_id}/${user_id}`);
+  const location = `steam://joinlobby/${game_id}/${lobby_id}/${user_id}`;
+
+  const profile_response = await fetch(`${steam_player.profileurl}?xml=true`);
+  const profile_text = await profile_response.text();
+  const parser = new xml2js.Parser();
+  const doc = await parser.parseStringPromise(profile_text);
+
+  //console.log(profile_text);
+  console.log(doc.profile);
+
+  const htmlContent = `
+  <html prefix="og: https://ogp.me/ns#">
+    <head>
+      <meta property="og:title" content="${doc.profile.steamID}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="${location}" />
+      <meta property="og:image" content="${doc.profile.inGameInfo[0].gameIcon[0]}" />
+      <meta property="og:description" content="I'm in a lobby for \`${doc.profile.inGameInfo[0].gameName[0]}\`! Join me by clicking the link" />
+    </head>
+  </html>`;
+
+  const response = new Response(htmlContent, { status: 301 });
+  response.headers.set("Location", location);
 
   return response;
 }
