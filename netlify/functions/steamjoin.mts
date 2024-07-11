@@ -32,9 +32,6 @@ export default async (req: Request, context: Context) => {
   const parser = new xml2js.Parser();
   const doc = await parser.parseStringPromise(profile_text);
 
-  //console.log(profile_text);
-  console.log(doc.profile);
-
   const htmlContent = `
   <html prefix="og: https://ogp.me/ns#">
     <head>
