@@ -1,5 +1,6 @@
 import type { Context } from "@netlify/functions";
 import xml2js from "xml2js";
+import crawler_user_agents from "../../crawler-user-agents.json";
 
 export default async (req: Request, context: Context) => {
   const { user_id } = context.params;
@@ -44,7 +45,14 @@ export default async (req: Request, context: Context) => {
   </html>`;
 
   const response = new Response(htmlContent, { status: 301 });
-  response.headers.set("Location", location);
+
+  const ua = req.headers.get("User-Agent");
+  if (!ua) return response;
+
+  const isCrawler = crawler_user_agents.find(useragent => ua.match(useragent.pattern));
+  if (!isCrawler) {
+    response.headers.set("Location", location);
+  }
 
   return response;
 }
